@@ -3,4 +3,6 @@ project(cpp_module02)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(cpp_module02 main.cpp)
+file(GLOB EX00 ex00/*.cpp ex00/*.hpp)
+add_executable(ex00 ${EX00})
+
