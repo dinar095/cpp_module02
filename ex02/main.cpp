@@ -3,20 +3,13 @@
 
 int main( void ) {
 	Fixed a;
-	bool y;
-	Fixed const b( Fixed( 5 ) * Fixed( 2 ) );
-	Fixed x(152);
-//	std::cout << x/a << std::endl;
-//	std::cout << Fixed::min(b, x) << std::endl;
-//	std::cout << Fixed::max(b, x) << std::endl;
+	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+	std::cout << a << std::endl;
 	std::cout << ++a << std::endl;
-	std::cout << ++a << std::endl;
-	std::cout << ++a << std::endl;
-//	std::cout << a << std::endl;
-//	std::cout << a++ << std::endl;
-//	std::cout << a << std::endl;
-//	std::cout << b << std::endl;
-//	std::cout << Fixed::max( a, b ) << std::endl;
-//cout << +x << endl;
+	std::cout << a << std::endl;
+	std::cout << a++ << std::endl;
+	std::cout << a << std::endl;
+	std::cout << b << std::endl;
+	std::cout << Fixed::max( a, b ) << std::endl;
 	return 0;
 }
