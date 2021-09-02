@@ -36,3 +36,4 @@ Fixed& Fixed::operator=(Fixed const &value)
 	this ->_fixedPointValue = value.getRawBits();
 	return *this;
 }
+

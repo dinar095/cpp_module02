@@ -1,13 +1,16 @@
 #include <iostream>
-#pragma  once
+#include <math.h>
+#pragma once
 
 using std::cout;
 using std::endl;
 
 class Fixed {
+
 private:
 	int _fixedPointValue;
 	static const int _fractionalBits = 8;
+
 public:
 	Fixed();
 	Fixed(const int value);
@@ -18,6 +21,8 @@ public:
 	int getRawBits( void ) const;
 	void setRawBits( int const raw );
 	int toInt( void ) const;
+	float toFloat( void ) const;
+
 };
 
 std::ostream& operator<< (std::ostream &out, const Fixed &value);
