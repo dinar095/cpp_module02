@@ -51,6 +51,8 @@ Fixed& Fixed::operator=(Fixed const &value)
 
 int Fixed::toInt(void) const
 {
+	if (_fixedPointValue < 0)
+		return -((int)-_fixedPointValue >> _fractionalBits);
 	return ((int)_fixedPointValue >> _fractionalBits);
 }
 
