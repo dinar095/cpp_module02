@@ -156,7 +156,7 @@ Fixed Fixed::operator--(int)
 	return tmp;
 }
 
-std::ostream& operator<< (std::ostream &out, const Fixed &value)
+std::ostream& operator << (std::ostream &out, const Fixed &value)
 {
 	out << value.toFloat();
 	return (out);
